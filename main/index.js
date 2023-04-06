@@ -1,4 +1,4 @@
-//declaration const string object function
+//declaration const string object variable
 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
@@ -6,13 +6,13 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
-//on submit process for the user entering thier creditails
+//on submit the process validation
 form.addEventListener('submit', e=> {
     e.preventDefault();
     validateInputs();
 });
 
-//set error massage validation if the need to without fell form
+//set error massage validation here!
 const setError = (element, message) => {
 const inputControl = element.parentElement;
 const errorDisplay = inputControl.querySelector('.error');
@@ -37,7 +37,7 @@ const isValidEmail = email => {
     return re.test(String(email).toLowerCase());
 }
 
-//string error massage user must change
+//string error massage user must change off course
 
 const validateInputs = () => {
 const usernameValue = username.value.trim();
